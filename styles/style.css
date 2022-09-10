@@ -103,3 +103,33 @@ input, select {
 
 
 /*=========================================================================MY CODE===========================================================*/
+
+body{
+    font-family: sans-serif;
+    line-height: 1.7rem;
+    color: #516171;
+    --blueish-color: rgba(0, 145, 255, 0.744);
+    --purpleish-color: rgba(164, 8, 164, 0.759);
+    --blue-color: blue;
+    --purple-color: purple;
+    --black-color: black;
+    --grey-color: grey;
+}
+
+img{
+    width: 100%;
+}
+
+section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.bg-cover{
+    background-position: center !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+
+/*Nav styling*/

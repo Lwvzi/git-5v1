@@ -103,9 +103,10 @@ input, select {
 
 
 /*=========================================================================MY CODE===========================================================*/
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 body{
-    font-family: sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     line-height: 1.7rem;
     color: #516171;
     --blueish-color: rgba(0, 145, 255, 0.744);
@@ -114,6 +115,9 @@ body{
     --purple-color: purple;
     --black-color: black;
     --grey-color: grey;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
 }
 
 img{
@@ -133,3 +137,25 @@ section{
 
 
 /*Nav styling*/
+
+
+
+
+
+/*home bg img styling*/
+.bg {
+    background: linear-gradient(90deg, var(--blueish-color), var(--purpleish-color)),url(".//silhouette-business-people-urban-scene-concepts-group-46666470.jpg"); 
+    position: absolute;
+    top: -30px;
+    left: -300x;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: -1;
+    filter: blur(21px);
+}
+
+
+.loading-text {
+    font-size: 50px;
+    color: #fff;
+}

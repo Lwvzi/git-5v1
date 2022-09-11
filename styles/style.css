@@ -196,7 +196,7 @@ section{
         width: 100vw;
     }
 
-    .navbar .navbar-nav .nav-link{
+    .navbar-nav .nav-item .nav-link{
         font-size: 1.2rem;
     }
 
@@ -216,12 +216,12 @@ section{
         width: 100vw;
     }
 
-    .navbar .navbar-nav .nav-link{
+    .navbar-nav .nav-item .nav-link{
         font-size: 1.6rem;
     }
 
     .navbar .navbar-brand{
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     .btn-brand{
@@ -236,16 +236,16 @@ section{
         width: 100vw;
     }
 
-    .navbar .navbar-nav .nav-link{
-        font-size: 2rem;
+    .navbar-nav .nav-item .nav-link{
+        font-size: 1.7rem;
     }
 
     .navbar .navbar-brand{
-        font-size: 2.7rem;
+        font-size: 2.2rem;
     }
 
     .btn-brand{
-        font-size: 2.1rem;
+        font-size: 1.8rem;
     }
  }
 
@@ -267,4 +267,5 @@ section{
 .loading-text {
     font-size: 50px;
     color: #fff;
+    margin-top: 90px;
 }

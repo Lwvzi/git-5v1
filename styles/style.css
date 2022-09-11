@@ -138,7 +138,116 @@ section{
 
 /*Nav styling*/
 
+.navbar{
+    width: 100vw;
+    background-color: var(--blueish-color) !important;
+    box-shadow: 0px 6px 21px var(--blue-color);
+}
 
+
+
+.navbar .navbar-brand{
+    font-family: 'Ubuntu' 'Gill Sans', 'Gill Sans MT' 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    color: var(--purple-color);
+    font-weight: 800;
+}
+
+.navbar .navbar-brand:hover{
+    color: var(--purpleish-color);
+}
+
+.navbar-nav .nav-item .nav-link{
+    font-family: 'Ubuntu' 'Gill Sans', 'Gill Sans MT' 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    color: var(--purple-color);
+    font-weight: 600;
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+    color: var(--purpleish-color);
+}
+
+.btn-brand{
+    color: var(--purple-color);
+    font-size: 1.3rem;
+    font-family: 'Ubuntu' 'Gill Sans', 'Gill Sans MT' 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+.btn-brand:hover{
+    background-color: var(--blue-color);
+    color: var(--purpleish-color);
+}
+
+.fa-bars{
+    font-weight: 600;
+    color: var(--purpleish-color);
+}
+
+.fa-bars:hover{
+    color: var(--purple-color) !important;
+}
+
+/* navbar media qs */
+/* Small devices (landscape phones, 576px and up)*/
+@media screen and (min-width: 576px) {
+    .navbar{
+        width: 100vw;
+    }
+
+    .navbar .navbar-nav .nav-link{
+        font-size: 1.2rem;
+    }
+
+    .navbar .navbar-brand{
+        font-size: 1.5rem;
+    }
+
+    .btn-brand{
+        font-size: 1.4rem;
+    }
+    
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media screen and (min-width: 768px) { 
+    .navbar{
+        width: 100vw;
+    }
+
+    .navbar .navbar-nav .nav-link{
+        font-size: 1.6rem;
+    }
+
+    .navbar .navbar-brand{
+        font-size: 2.2rem;
+    }
+
+    .btn-brand{
+        font-size: 1.7rem;
+    }
+    
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media screen and (min-width: 992px) { 
+    .navbar{
+        width: 100vw;
+    }
+
+    .navbar .navbar-nav .nav-link{
+        font-size: 2rem;
+    }
+
+    .navbar .navbar-brand{
+        font-size: 2.7rem;
+    }
+
+    .btn-brand{
+        font-size: 2.1rem;
+    }
+ }
 
 
 

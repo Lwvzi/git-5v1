@@ -213,7 +213,7 @@ section{
 /* Medium devices (tablets, 768px and up)*/
 @media screen and (min-width: 768px) { 
     .navbar{
-        width: 90vw;
+        width: 85vw;
     }
 
     .navbar-nav .nav-item .nav-link{
@@ -233,21 +233,40 @@ section{
 /* Large devices (desktops, 992px and up)*/
 @media screen and (min-width: 992px) { 
     .navbar{
-        width: 100vw;
+        width: 85vw;
     }
 
     .navbar-nav .nav-item .nav-link{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .navbar .navbar-brand{
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .btn-brand{
-        font-size: 1.7rem;
+        font-size: 1.4rem;
     }
  }
+
+ /* XLarge devices (desktops, 992px and up)*/
+@media screen and (min-width: 1024px){
+    .navbar{
+        width: 85vw;
+    }
+
+    .navbar-nav .nav-item .nav-link{
+        font-size: 1.5rem;
+    }
+
+    .navbar .navbar-brand{
+        font-size: 1.9rem;
+    }
+
+    .btn-brand{
+        font-size: 1.5rem;
+    }
+}
 
 
 
@@ -265,15 +284,15 @@ section{
 
 
 .loading-text {
-    font-size: 3rem;
+    font-size: 1.8rem;
     color: #fff;
-    margin-top: 90px;
+    margin-top: 56px;
     text-align: center;
     justify-content: center;
 }
 
 #home h1{
-    margin-top: 45px;
+    margin-top: 14px;
     font-size: 1.9rem;
     text-align: center;
     justify-content: center;
@@ -292,4 +311,31 @@ section{
     color: var(--black-color);
     width: 80vw;
 }
+
+/* home section media qs */
+/* Small devices (landscape phones, 576px and up)*/
+@media screen and (min-width: 576px) {
+
+    
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media screen and (min-width: 768px) { 
+    #home h1{
+        font-size: 2.5rem;
+        margin-right: 4rem;
+    }
+    
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media screen and (min-width: 992px) { 
+    #home h1{
+        font-size: 2.5rem;
+    }
+
+    #home p{
+        font-size: 1.7rem;
+    }
+ }
 

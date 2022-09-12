@@ -109,8 +109,8 @@ body{
     font-family: 'Ubuntu', sans-serif;
     line-height: 1.7rem;
     color: #516171;
-    --blueish-color: rgba(0, 145, 255, 0.744);
-    --purpleish-color: rgba(164, 8, 164, 0.759);
+    --blueish-color: rgba(0, 145, 255, 0.547);
+    --purpleish-color: rgba(164, 8, 164, 0.551);
     --blue-color: blue;
     --purple-color: purple;
     --black-color: black;
@@ -139,9 +139,10 @@ section{
 /*Nav styling*/
 
 .navbar{
-    width: 90vw;
+    width: 100vw;
     background-color: var(--blueish-color) !important;
     box-shadow: 0px 6px 21px var(--blue-color);
+    margin-bottom: 4rem;
 }
 
 
@@ -193,7 +194,7 @@ section{
 /* Small devices (landscape phones, 576px and up)*/
 @media screen and (min-width: 576px) {
     .navbar{
-        width: 90vw;
+        width: 100vw;
     }
 
     .navbar-nav .nav-item .nav-link{
@@ -213,7 +214,7 @@ section{
 /* Medium devices (tablets, 768px and up)*/
 @media screen and (min-width: 768px) { 
     .navbar{
-        width: 85vw;
+        width: 99vw;
     }
 
     .navbar-nav .nav-item .nav-link{
@@ -233,26 +234,26 @@ section{
 /* Large devices (desktops, 992px and up)*/
 @media screen and (min-width: 992px) { 
     .navbar{
-        width: 85vw;
+        width: 100vw;
     }
 
     .navbar-nav .nav-item .nav-link{
-        font-size: 1.4rem;
-    }
-
-    .navbar .navbar-brand{
         font-size: 1.7rem;
     }
 
+    .navbar .navbar-brand{
+        font-size: 2rem;
+    }
+
     .btn-brand{
-        font-size: 1.4rem;
+        font-size: 1.7rem;
     }
  }
 
- /* XLarge devices (desktops, 992px and up)*/
+ /* XLarge devices (desktops, 1024px and up)*/
 @media screen and (min-width: 1024px){
     .navbar{
-        width: 85vw;
+        width: 100vw;
     }
 
     .navbar-nav .nav-item .nav-link{
@@ -275,7 +276,7 @@ section{
     background: linear-gradient(90deg, var(--blueish-color), var(--purpleish-color)),url(".//silhouette-business-people-urban-scene-concepts-group-46666470.jpg"); 
     position: absolute;
     top: -30px;
-    left: -300x;
+    left: -30px;
     width: calc(100vw + 60px);
     height: calc(100vh + 60px);
     z-index: -1;
@@ -290,6 +291,7 @@ section{
     text-align: center;
     justify-content: center;
 }
+
 
 #home h1{
     margin-top: 14px;
@@ -315,7 +317,11 @@ section{
 /* home section media qs */
 /* Small devices (landscape phones, 576px and up)*/
 @media screen and (min-width: 576px) {
-
+    #home h1{
+        font-size: 2rem;
+        margin-right: 4rem;
+        margin-top: 4rem;
+    }
     
  }
 
@@ -324,6 +330,7 @@ section{
     #home h1{
         font-size: 2.5rem;
         margin-right: 4rem;
+        margin-top: 4rem;
     }
     
  }
@@ -332,10 +339,130 @@ section{
 @media screen and (min-width: 992px) { 
     #home h1{
         font-size: 2.5rem;
+        margin-top: 5rem;
     }
 
     #home p{
-        font-size: 1.7rem;
+        font-size: 2rem;
     }
  }
 
+
+
+ /*================================================== Services Section starts =======================================================*/
+#services{
+    background-color: linear-gradient(90deg, var(--purpleish-color), var(--blueish-color));
+}
+
+ .service-content h1{
+    font-size: 2rem;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-slider {
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform .5s ease-in-out;
+}
+
+.left-slider > div {
+    height: 100%;
+    width: 100%;    /*100% of its container ie 35%*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.left-slider h1 {
+    font-size: 35px;
+    margin-bottom: 14px;
+    margin-top: -35px;
+}
+
+.right-slider {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 35%;  /*since the left-slider takes up 35%, our right-slider has to start from the end of the lfet-slider ie 35%*/
+    width: 65%;
+    transition: transform .5s ease-in-out;
+}
+
+.right-slider > div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;     /*centered on both x and y axis*/
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    background-color: #fff;
+    border: none;
+    color: gray;
+    cursor: pointer;
+    font-size: 21px;
+    padding: 15px;
+}
+
+button:hover {
+    color: #222;
+}
+
+button:focus {
+    outline: none;
+}
+
+.slider-container .action-btns button {
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    z-index: 100;
+}
+
+.slider-container .action-btns .button-down {
+    transform: translateX(-100%); /*puts the down arrrow to the left*/
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.slider-container .action-btns .button-up {
+    transform: translateY(-100%); /*puts the up arrrow slightly higher than the down arrow*/
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+
+/* services media qs */
+/* Small devices (landscape phones, 576px and up)*/
+@media screen and (min-width: 576px) {
+    
+    
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media screen and (min-width: 768px) { 
+    
+    
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media screen and (min-width: 992px) { 
+    
+ }
+
+ /* XLarge devices (desktops, 1024px and up)*/
+@media screen and (min-width: 1024px){
+    
+}
